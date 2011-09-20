@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="title">篮地图</string>
+	<string name="add_new">添加篮</string>
+	<string name="add">添加</string>
+	<string name="cancel">取消</string>
+	<string name="add_error">我们有一个问题，这个位置发送到服务器时，请再试一次。</string>
+	<string name="gpd_note">我们需要您的位置，为您就近篮</string>
+	<string name="programmer">编程哈齐姆哈立德\nHazemKhaled.com</string>
+	<string name="disgner">艺术品马希尔凪\n</string>
+</resources>

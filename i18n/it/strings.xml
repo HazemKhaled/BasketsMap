@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="title">Cesti Mappa</string>
+	<string name="add_new">Aggiungi Cesti</string>
+	<string name="add">Aggiungere</string>
+	<string name="cancel">Annullare</string>
+	<string name="add_error">abbiamo un problema quando invio questa posizione al server, riprova.</string>
+	<string name="gpd_note">abbiamo bisogno della vostra posizione per ottenere il più vicino cestini per voi</string>
+	<string name="programmer">Programmato da Hazem Khaled \nHazemKhaled.com</string>
+	<string name="disgner">Opere di Maher Nagi\n</string>
+</resources>

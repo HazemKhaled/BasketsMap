@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="title">籃地圖</string>
+	<string name="add_new">添加籃</string>
+	<string name="add">添加</string>
+	<string name="cancel">取消</string>
+	<string name="add_error">我們得到了一個問題，當這個位置發送到服務器，請再試一次。</string>
+	<string name="gpd_note">我們需要你的位置，以獲得您最近的籃子</string>
+	<string name="programmer">編程通過哈齊姆哈立德\nHazemKhaled.com</string>
+	<string name="disgner">作品由馬希爾凪\n</string>
+</resources>

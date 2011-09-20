@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="title">Kosarak Térkép</string>
+	<string name="add_new">Add Kosarak</string>
+	<string name="add">Add</string>
+	<string name="cancel">Mégse</string>
+	<string name="add_error">Van egy kis gond, ha elküldi ezt a helyet a kiszolgáló, kérjük, próbálja újra.</string>
+	<string name="gpd_note">szükségünk van a helye, hogy a legközelebbi kosár az Ön számára</string>
+	<string name="programmer">Programozott A Hazem Khaled\nHazemKhaled.com</string>
+	<string name="disgner">Artwork a Maher Nagi\n</string>
+</resources>

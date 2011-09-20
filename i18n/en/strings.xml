@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="title">Baskets Map</string>
+	<string name="add_new">Add Baskets</string>
+	<string name="add">Add</string>
+	<string name="cancel">Cancel</string>
+	<string name="add_error">we got a problem when send this location to server, please try again.</string>
+	<string name="gpd_note">we need your location to get the nearest baskets for you</string>
+	<string name="programmer">Programmed By Hazem Khaled\nHazemKhaled.com</string>
+	<string name="disgner">Artwork by Maher Nagi\n</string>
+</resources>

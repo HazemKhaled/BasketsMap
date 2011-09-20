@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="title">корзины Карта</string>
+	<string name="add_new">Добавить корзины</string>
+	<string name="add">добавлять</string>
+	<string name="cancel">отменить</string>
+	<string name="add_error">мы получили проблему, когда отправить это место на сервере, пожалуйста, попробуйте еще раз.</string>
+	<string name="gpd_note">нам нужно ваше местоположение, чтобы получить ближайший корзины для вас</string>
+	<string name="programmer">Запрограммированы Хазем Халед \nHazemKhaled.com</string>
+	<string name="disgner">Художественные работы Махер Наги\n</string>
+</resources>

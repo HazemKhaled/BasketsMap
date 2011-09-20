@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="title">Baskets Map</string>
+	<string name="add_new">اضف سلة قمامة، مشاركتك هامة</string>
+	<string name="add">اضف</string>
+	<string name="cancel">ألغاء</string>
+	<string name="add_error">حدثت مشكلة في الاضافة، تاكد من اتصال الانترنت الخاص بك وحاول مرة اخرى.</string>
+	<string name="gpd_note">نحتاج للحصول على مكانك الان لعرض اقرب سلات القمامة بجوارك</string>
+	<string name="programmer">برمجة حازم خالد\nHazemKhaled.com</string>
+	<string name="disgner">تصميم ماهر ناجي\n</string>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="title">Paniers Carte</string>
+	<string name="add_new">Ajouter Paniers</string>
+	<string name="add">Ajouter</string>
+	<string name="cancel">Annuler</string>
+	<string name="add_error">nous avons eu un problème quand envoyer cet emplacement pour le serveur, s'il vous plaît essayez de nouveau.</string>
+	<string name="gpd_note">nous avons besoin de votre emplacement pour obtenir le plus proche pour vous les paniers</string>
+	<string name="programmer">programmé par Hazem Khaled\nHazemKhaled.com</string>
+	<string name="disgner">illustration par Maher Nagi\n</string>
+</resources>

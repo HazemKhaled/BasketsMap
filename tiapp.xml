@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <deployment-targets>
+        <target device="mobileweb">false</target>
+        <target device="iphone">true</target>
+        <target device="ipad">true</target>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+    </deployment-targets>
+    <id>com.hazemkhaled.baskets</id>
+    <name>Baskets Map</name>
+    <version>1.1</version>
+    <publisher>hazemkhaled</publisher>
+    <url>http://baskets.hazemkhaled.com</url>
+    <description>find location for the nearest rubbish basket</description>
+    <copyright>2011 by hazemkhaled</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>f4afa00c-6e50-499c-8db8-b7525be8ec88</guid>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <tool-api-level>8</tool-api-level>
+        <manifest android:installLocation="preferExternal"
+            android:versionCode="11" android:versionName="1.1">
+            <uses-sdk android:minSdkVersion="7"/>
+        </manifest>
+    </android>
+    <modules/>
+    <property name="ti.android.google.map.api.key">0UbOesyM2-avKMMwPePseI7iwNQtbXJlxajQ6fg</property>
+</ti:app>

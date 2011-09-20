@@ -1,0 +1,20 @@
+Logfile initialized
+[INFO] logfile = /Users/hazemkhaled/mobile/Baskets Map/build.log
+[DEBUG] /Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/builder.py simulator Baskets Map /Users/hazemkhaled/Sources/Developmen/SDKs/android-sdk-mac_x86 /Users/hazemkhaled/mobile/Baskets Map com.hazemkhaled.baskets 3 HVGA 
+[INFO] Building Baskets Map for Android ... one moment
+[INFO] Titanium SDK version: 1.7.2 (07/21/11 09:36 97c3689)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.114951 seconds on emulator to get ready
+[DEBUG] com.hazemkhaled.baskets installed? True
+[INFO] Fastdev server running, deploying in Fastdev mode
+[INFO] Copying project resources..
+[INFO] Tiapp.xml unchanged, skipping class generation
+[DEBUG] Processing Android resource drawables
+[INFO] Waiting for SDCard to become available..
+[INFO] Re-launching application ... Baskets Map
+[INFO] Launching application ... Baskets Map
+[TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hazemkhaled.baskets/.BasketsMapActivity }
+
+[INFO] Relaunched Baskets Map ... Application should be running.

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="title">Cestas Mapa</string>
+	<string name="add_new">Añadir Cestas</string>
+	<string name="add">Añadir</string>
+	<string name="cancel">Cancelar</string>
+	<string name="add_error">tenemos un problema al enviar este lugar con el servidor, por favor, inténtelo de nuevo.</string>
+	<string name="gpd_note">necesitamos de su ubicación para obtener el más cercano cestas para usted</string>
+	<string name="programmer">Programado por Hazem Khaled\nHazemKhaled.com</string>
+	<string name="disgner">Obras de arte por Maher Nagi\n</string>
+</resources>
