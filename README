@@ -1,18 +1,15 @@
-Welcome to your Appcelerator Titanium Mobile Project
+Salam :)
 
-This is a blank project.  Start by editing your application's app.js to 
-make your first mobile project using Titanium.
+this is open source Titanium project
+
+== Stores Links ==
+iPad / iPhone	http://itunes.apple.com/app/id462669041
+Android			(soon)
 
 
+== About ==
+this application tested on iPhone, iPad and Android, and you can learn from this code
+- Geo Loaction API
+- Internationalization (i18n)
 
-----------------------------------
-Stuff our legal folk make us say:
-
-Appcelerator, Appcelerator Titanium and associated marks and logos are 
-trademarks of Appcelerator, Inc. 
-
-Titanium is Copyright (c) 2009-2010 by Appcelerator, Inc. All Rights Reserved.
-
-Titanium is licensed under the Apache Public License (Version 2). Please
-see the LICENSE file for the full license.
-
+and you can use this app after make your updates under GNU GPL license

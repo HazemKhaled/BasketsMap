@@ -12,7 +12,7 @@
     <version>1.2</version>
     <publisher>hazemkhaled</publisher>
     <url>http://baskets.hazemkhaled.com</url>
-    <description>find location for the nearest rubbish basket</description>
+    <description>find location for the nearest Garbage</description>
     <copyright>2011 by hazemkhaled</copyright>
     <icon>appicon.png</icon>
     <persistent-wifi>false</persistent-wifi>
