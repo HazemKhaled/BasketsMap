@@ -9,7 +9,7 @@
     </deployment-targets>
     <id>com.hazemkhaled.baskets</id>
     <name>Baskets Map</name>
-    <version>1.1</version>
+    <version>1.2</version>
     <publisher>hazemkhaled</publisher>
     <url>http://baskets.hazemkhaled.com</url>
     <description>find location for the nearest rubbish basket</description>

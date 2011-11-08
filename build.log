@@ -1,20 +1,94 @@
 Logfile initialized
 [INFO] logfile = /Users/hazemkhaled/mobile/Baskets Map/build.log
-[DEBUG] /Library/Application Support/Titanium/mobilesdk/osx/1.7.2/android/builder.py simulator Baskets Map /Users/hazemkhaled/Sources/Developmen/SDKs/android-sdk-mac_x86 /Users/hazemkhaled/mobile/Baskets Map com.hazemkhaled.baskets 3 HVGA 
+[DEBUG] /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/builder.py simulator Baskets Map /Users/hazemkhaled/Sources/Developmen/SDKs/android-sdk-mac_x86 /Users/hazemkhaled/mobile/Baskets Map com.hazemkhaled.baskets 7 HVGA 
 [INFO] Building Baskets Map for Android ... one moment
-[INFO] Titanium SDK version: 1.7.2 (07/21/11 09:36 97c3689)
+[INFO] Titanium SDK version: 1.7.3 (10/17/11 13:44 dcf4257)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 0 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 20 seconds)
+[DEBUG] waited 20.245057 seconds on emulator to get ready
+[INFO] Waiting for the Android Emulator to become available
+[ERROR] Timed out waiting for android.process.acore
+[DEBUG] com.hazemkhaled.baskets installed? False
+[INFO] Fastdev server running, deploying in Fastdev mode
+[INFO] Copying project resources..
+[TRACE] Generating Java Classes
+[DEBUG] Processing Android resource drawables
+[DEBUG] copying app icon: /Users/hazemkhaled/mobile/Baskets Map/build/android/bin/assets/Resources/appicon.png
+[DEBUG] generating theme.xml
+[DEBUG] found splash screen at /Users/hazemkhaled/mobile/Baskets Map/build/android/bin/assets/Resources/default.png
+[TRACE] Writing out AndroidManifest.xml
+[DEBUG] adding /Users/hazemkhaled/mobile/Baskets Map/build/android/gen/com/hazemkhaled/baskets/BasketsMapActivity.java to javac build list
+[DEBUG] adding /Users/hazemkhaled/mobile/Baskets Map/build/android/gen/com/hazemkhaled/baskets/BasketsMapAppInfo.java to javac build list
+[DEBUG] adding /Users/hazemkhaled/mobile/Baskets Map/build/android/gen/com/hazemkhaled/baskets/BasketsMapApplication.java to javac build list
+[DEBUG] adding /Users/hazemkhaled/mobile/Baskets Map/build/android/gen/com/hazemkhaled/baskets/R.java to javac build list
+[DEBUG] Building Java Sources: "/Users/hazemkhaled/mobile/Baskets Map/build/android/gen/com/hazemkhaled/baskets/BasketsMapActivity.java" "/Users/hazemkhaled/mobile/Baskets Map/build/android/gen/com/hazemkhaled/baskets/BasketsMapAppInfo.java" "/Users/hazemkhaled/mobile/Baskets Map/build/android/gen/com/hazemkhaled/baskets/BasketsMapApplication.java" "/Users/hazemkhaled/mobile/Baskets Map/build/android/gen/com/hazemkhaled/baskets/R.java"
+[INFO] Waiting for SDCard to become available..
+[ERROR] Timed out waiting for SDCard to become available (60s)
+[INFO] Compiling Android Resources... This could take some time
+[DEBUG] Android classes.dex built
+[DEBUG] creating unsigned apk: /Users/hazemkhaled/mobile/Baskets Map/build/android/bin/app-unsigned.apk
+[DEBUG] from resource zip => assets/Resources/images/add.png
+[DEBUG] from resource zip => assets/Resources/images/bkToMap.png
+[DEBUG] from resource zip => assets/Resources/images/bubble.png
+[DEBUG] from resource zip => assets/Resources/images/mail.png
+[DEBUG] from resource zip => assets/Resources/images/map.png
+[DEBUG] from resource zip => assets/Resources/images/pin_small.png
+[DEBUG] from resource zip => assets/Resources/images/twitter.png
+[DEBUG] from resource zip => assets/Resources/about.js
+[DEBUG] from resource zip => assets/Resources/app.js
+[DEBUG] from resource zip => assets/Resources/appicon.png
+[DEBUG] from resource zip => assets/Resources/default.png
+[DEBUG] from resource zip => assets/tiapp.xml
+[DEBUG] from resource zip => res/drawable/appicon.png
+[DEBUG] from resource zip => res/drawable/background.png
+[DEBUG] from resource zip => res/drawable/facebook_icon.png
+[DEBUG] from resource zip => res/drawable/facebook_login.png
+[DEBUG] from resource zip => res/drawable/facebook_login_down.png
+[DEBUG] from resource zip => res/drawable/facebook_login_wide.png
+[DEBUG] from resource zip => res/drawable/facebook_login_wide_down.png
+[DEBUG] from resource zip => res/drawable/facebook_logout.png
+[DEBUG] from resource zip => res/drawable/facebook_logout_down.png
+[DEBUG] from resource zip => res/layout/titanium_tabgroup.xml
+[DEBUG] from resource zip => AndroidManifest.xml
+[DEBUG] from resource zip => resources.arsc
+[DEBUG] from resource zip => res/drawable-hdpi/facebook_icon.png
+[DEBUG] from resource zip => res/drawable-ldpi/facebook_icon.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/titanium.jar => org/apache/Commons-NOTICE.txt
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/titanium.jar => org/apache/HttpComponents-NOTICE.txt
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/titanium.jar => org/apache/mime4j-NOTICE.txt
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/titanium.jar => org/appcelerator/titanium/build.properties
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/titanium.jar => org/appcelerator/titanium/res/drawable/background.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/modules/titanium-facebook.jar => ti/modules/titanium/facebook/LICENSE
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/modules/titanium-yahoo.jar => ti/modules/titanium/yahoo/yahoo.js
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/smalljs.jar => org/mozilla/javascript/resources/Messages.properties
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/smalljs.jar => org/mozilla/javascript/resources/Messages_fr.properties
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
+[DEBUG] from JAR /Library/Application Support/Titanium/mobilesdk/osx/1.7.3/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.114951 seconds on emulator to get ready
-[DEBUG] com.hazemkhaled.baskets installed? True
-[INFO] Fastdev server running, deploying in Fastdev mode
-[INFO] Copying project resources..
-[INFO] Tiapp.xml unchanged, skipping class generation
-[DEBUG] Processing Android resource drawables
-[INFO] Waiting for SDCard to become available..
-[INFO] Re-launching application ... Baskets Map
+[DEBUG] waited 0.094154 seconds on emulator to get ready
+[INFO] Installing application on device
 [INFO] Launching application ... Baskets Map
 [TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.hazemkhaled.baskets/.BasketsMapActivity }
 
-[INFO] Relaunched Baskets Map ... Application should be running.
+[INFO] Deployed Baskets Map ... Application should be running.
+[DEBUG] signal caught: 15
+[DEBUG] calling emulator kill on 5058
