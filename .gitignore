@@ -1,7 +1,5 @@
-
 .project
 build
-build.log
 .fastdev.lock
 .settings
 build.log
