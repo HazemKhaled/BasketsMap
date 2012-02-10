@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="title">Manden Kaart</string>
+	<string name="add_new">Voeg Manden</string>
+	<string name="add">Toevoegen</string>
+	<string name="cancel">Annuleren</string>
+	<string name="add_error">we hebben een probleem wanneer deze locatie te sturen naar de server, probeer het opnieuw.</string>
+	<string name="gpd_note">hebben we uw locatie naar de dichtstbijzijnde manden voor je</string>
+	<string name="programmer">Geprogrammeerd door Hazem Khaled\nHazemKhaled.com</string>
+	<string name="disgner">Kunstwerk door Maher Nagi\n</string>
+</resources>
