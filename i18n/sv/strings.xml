@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="title">Korgar Karta</string>
+	<string name="add_new">Tillsätt korgar</string>
+	<string name="add">Tillsätt</string>
+	<string name="cancel">Avbryt</string>
+	<string name="add_error">Vi har ett problem när du skickar denna plats till servern, försök igen.</string>
+	<string name="gpd_note">Vi behöver din plats för att få de närmaste korgarna för dig</string>
+	<string name="programmer">Programmerats av Hazem Khaled\nHazemKhaled.com</string>
+	<string name="disgner">Konstverk av Maher Nagi\n</string>
+</resources>
