@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="title">バスケットの地図</string>
+	<string name="add_new">バスケットを追加します。</string>
+	<string name="add">加える</string>
+	<string name="cancel">キャンセル</string>
+	<string name="add_error">サーバにこの場所を送信するときに我々は問題を抱えて、もう一度試してください。</string>
+	<string name="gpd_note">私たちはあなたのために最寄りのバスケットを得るためにあなたの場所を必要とする</string>
+	<string name="programmer">によってプログラムされた Hazem Khaled\nHazemKhaled.com</string>
+	<string name="disgner">アートワーク Maher Nagi\n</string>
+</resources>
