@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="title">Baskets Karte</string>
+	<string name="add_new">Baskets Karte</string>
+	<string name="add">Hinzufügen</string>
+	<string name="cancel">Stornieren</string>
+	<string name="add_error">Wir haben ein Problem, wenn senden Sie diesen Ort in den Server, bitte versuchen Sie es erneut.</string>
+	<string name="gpd_note">Wir brauchen Ihren Standort, um die nächste Körbe für Sie zu besorgen</string>
+	<string name="programmer">Programmiert von Hazem Khaled\nHazemKhaled.com</string>
+	<string name="disgner">Artwork by Maher Nagi\n</string>
+</resources>
