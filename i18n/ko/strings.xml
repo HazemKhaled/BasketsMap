@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<string name="title">바구니지도</string>
+	<string name="add_new">바구니에 추가</string>
+	<string name="add">추가</string>
+	<string name="cancel">취소</string>
+	<string name="add_error">서버에이 위치를 보낼 때 문제가 있고, 다시 시도해주십시오.</string>
+	<string name="gpd_note">우리는 당신을 위해 가까운 바구니를 얻으려면 위치를 필요</string>
+	<string name="programmer">으로 프로그래밍 Hazem Khaled\nHazemKhaled.com</string>
+	<string name="disgner">에 의한 작품 Maher Nagi\n</string>
+</resources>
