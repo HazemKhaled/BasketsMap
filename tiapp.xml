@@ -10,7 +10,7 @@
     </deployment-targets>
     <id>com.hazemkhaled.baskets</id>
     <name>Baskets Map</name>
-    <version>2.0</version>
+    <version>2.1</version>
     <publisher>hazemkhaled</publisher>
     <url>http://baskets.hazemkhaled.com</url>
     <description>find location for the nearest Garbage</description>
@@ -22,7 +22,7 @@
     <statusbar-hidden>false</statusbar-hidden>
     <fullscreen>false</fullscreen>
     <navbar-hidden>false</navbar-hidden>
-    <analytics>false</analytics>
+    <analytics>true</analytics>
     <guid>f4afa00c-6e50-499c-8db8-b7525be8ec88</guid>
     <iphone>
         <orientations device="iphone">
@@ -35,7 +35,7 @@
     <android xmlns:android="http://schemas.android.com/apk/res/android">
         <tool-api-level>8</tool-api-level>
         <manifest android:installLocation="preferExternal"
-            android:versionCode="11" android:versionName="1.1">
+            android:versionCode="21" android:versionName="2.1">
             <uses-sdk android:minSdkVersion="7"/>
         </manifest>
     </android>
