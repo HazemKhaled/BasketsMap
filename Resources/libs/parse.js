@@ -14,7 +14,7 @@ var ENDPOINT = 'https://api.parse.com/1/classes/';
  *
  * url: url endpoint to hit
  * method: HTTP method to use
- * payload (optional): A JavaScript object to JSON-serialize (PUT/POST only)
+ * payload (optional): A JavaScript object to JSON-serialize
  * success (optional): a function to be called on a successful request
  * error (optional): a function to be called on a server error
  */
@@ -30,16 +30,28 @@ Client.prototype.request = function(args) {
 		(args.error) ? args.error(response, this) : Ti.API.error('Parse Client: Request Failed: ' + args.url);
 	};
 
-	xhr.open(args.method, ENDPOINT + args.url);
-	var authString = Base64.encode(that.applicationId + ':' + that.masterKey);
-	xhr.setRequestHeader('Authorization', 'Basic ' + authString);
-	xhr.setRequestHeader('Content-Type', 'application/json');
-
-	if(args.method === 'PUT' || args.method === 'POST') {
+	if(args.method == 'PUT' || args.method == 'POST') {
+		xhr.open(args.method, ENDPOINT + args.url);
+		var authString = Base64.encode(that.applicationId + ':' + that.masterKey);
+		xhr.setRequestHeader('Authorization', 'Basic ' + authString);
+		xhr.setRequestHeader('Content-Type', 'application/json');
 		xhr.send(JSON.stringify(args.payload));
 	} else {
-		xhr.send('');
+		var body = ENDPOINT + args.url + "?";
+		var paramMap = args.payload || {};
+		for(var a in paramMap) {
+			body += Titanium.Network.encodeURIComponent(a) + '=' + Titanium.Network.encodeURIComponent(paramMap[a]) + '&';
+		}
+
+		Ti.API.debug(body);
+
+		xhr.open(args.method, body);
+		var authString = Base64.encode(that.applicationId + ':' + that.masterKey);
+		xhr.setRequestHeader('Authorization', 'Basic ' + authString);
+		xhr.setRequestHeader('Content-Type', 'application/json');
+		xhr.send();
 	}
+
 };
 
 /*
@@ -72,9 +84,12 @@ Client.prototype.create = function(args) {
  */
 Client.prototype.get = function(args) {
 	this.request({
-		url : args.className + '/' + args.objectId,
+		url : args.className + (args.objectId ? '/' + args.objectId : ''),
 		method : 'GET',
-		success : args.success,
+		payload : args.payload, //< --- NEW
+		success : function(response) {
+			args.success(response);
+		},
 		error : args.error
 	});
 };
