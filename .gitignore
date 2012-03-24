@@ -3,3 +3,4 @@ build
 .fastdev.lock
 .settings
 build.log
+Resources/libs/credentials.js
