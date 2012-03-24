@@ -276,7 +276,7 @@ mapView.addEventListener('regionChanged', function(e) {
 				startRequestingOnServer = false;
 			},
 			error : function(response, xhr) {
-				alert(response);
+				alert('Error!');
 				startRequestingOnServer = false;
 			}
 		});
