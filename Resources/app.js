@@ -1,12 +1,13 @@
-var apiUrl = 'http://baskets.hazemkhaled.com/api.php?';
 var mapLocation = {};
 Ti.Geolocation.preferredProvider = "gps";
+//insert global variables containing credentials
+Ti.include('libs/credentials.js');
 
 //include Parse module
 var parse = require('libs/parse');
 
 //create Parse Client
-var client = new parse.Client('WhemYSEgHchd4ds8bp1pNGRmrxg14TOAMeAbmYSL', 'rMvGHaeJvV0nQnaJ8idkb46eLgpZx6TVRHKNJrRl');
+var client = new parse.Client(APPLICATION_ID, MASTER_KEY);
 
 var mainWin = Titanium.UI.createWindow({
 	title : L('title'),
@@ -211,34 +212,6 @@ var mapView = Titanium.Map.createView({
 var startRequestingOnServer = false;
 var basketsIDs = [];
 
-var mapReq = Titanium.Network.createHTTPClient();
-
-mapReq.onload = function() {
-	var json = this.responseText;
-	var response = JSON.parse(json);
-
-	var annotation;
-
-	for(r in response ) {
-		myid = response[r].id;
-		if( typeof basketsIDs[myid] === 'undefined') {
-			basketsIDs[myid] = true
-			annotation = Titanium.Map.createAnnotation({
-				latitude : parseFloat(response[r].location.latitude),
-				longitude : parseFloat(response[r].location.longitude),
-				title : response[r].title,
-				myid : myid,
-				animate : true
-			});
-
-			if(Titanium.Platform.osname == 'android') {
-				annotation.pinImage = 'images/pin_small.png';
-			}
-			mapView.addAnnotation(annotation);
-		}
-	}
-	startRequestingOnServer = false;
-};
 mapView.addEventListener('regionChanged', function(e) {
 	mapLocation = {
 		longitude : e.longitude,
@@ -248,29 +221,65 @@ mapView.addEventListener('regionChanged', function(e) {
 	if(startRequestingOnServer === false) {
 		startRequestingOnServer = true;
 
-		/*client.get({
-		 className : 'points',
-		 payload : {
-		 'where' : JSON.stringify({
-		 'longitude' : {
-		 "$gte" : e.longitude - e.longitudeDelta,
-		 "$lte" : e.longitude + e.longitudeDelta
-		 },
-		 'latitude' : {
-		 "$gte" : e.latitude - e.latitudeDelta,
-		 "$lte" : e.longitude + e.latitudeDelta
-		 }
-		 })
-		 },
-		 success : function(response) {
-		 alert(JSON.stringify(response));
-		 },
-		 error : function(response, xhr) {
-		 alert(response);
-		 }
-		 });*/
-		mapReq.open("GET", apiUrl + "longitude=" + e.longitude + "&longitudeDelta=" + e.longitudeDelta + "&latitude=" + e.latitude + "&latitudeDelta=" + e.latitudeDelta);
-		mapReq.send();
+		client.get({
+			className : 'points',
+			payload : {
+				'where' : JSON.stringify({
+					'geoPoint' : {
+						"$nearSphere" : {
+							"__type" : "GeoPoint",
+							"latitude" : e.latitude,
+							"longitude" : e.longitude
+						},
+						"$maxDistanceInMiles" : 1.5
+					}/*,
+					 'groPoint' : {
+					 "$within" : {
+					 "$box" : [{
+					 "__type" : "GeoPoint",
+					 "latitude" : e.latitude + e.latitudeDelta,
+					 "longitude" : e.longitude + e.longitudeDelta
+					 }, {
+					 "__type" : "GeoPoint",
+					 "latitude" : e.latitude - e.latitudeDelta,
+					 "longitude" : e.longitude - e.longitudeDelta
+					 }]
+					 }
+					 }*/
+				})
+			},
+			success : function(response) {
+				//alert(JSON.stringify(response));
+
+				var results = response.results;
+
+				var annotation;
+
+				for(r in results ) {
+					myid = results[r].objectId;
+					if( typeof basketsIDs[myid] === 'undefined') {
+						basketsIDs[myid] = true
+						annotation = Titanium.Map.createAnnotation({
+							latitude : results[r].geoPoint.latitude,
+							longitude : results[r].geoPoint.longitude,
+							title : results[r].title,
+							myid : myid,
+							animate : true
+						});
+
+						if(Titanium.Platform.osname == 'android') {
+							annotation.pinImage = 'images/pin_small.png';
+						}
+						mapView.addAnnotation(annotation);
+					}
+				}
+				startRequestingOnServer = false;
+			},
+			error : function(response, xhr) {
+				alert(response);
+				startRequestingOnServer = false;
+			}
+		});
 
 	}
 });
