@@ -2,6 +2,12 @@ var apiUrl = 'http://baskets.hazemkhaled.com/api.php?';
 var mapLocation = {};
 Ti.Geolocation.preferredProvider = "gps";
 
+//include Parse module
+var parse = require('libs/parse');
+
+//create Parse Client
+var client = new parse.Client('WhemYSEgHchd4ds8bp1pNGRmrxg14TOAMeAbmYSL', 'rMvGHaeJvV0nQnaJ8idkb46eLgpZx6TVRHKNJrRl');
+
 var mainWin = Titanium.UI.createWindow({
 	title : L('title'),
 	backgroundColor : '#fff'
@@ -93,15 +99,17 @@ addBtn.addEventListener('click', function() {
 
 	addBtn.addEventListener('click', function() {
 
-		var addReq = Titanium.Network.createHTTPClient();
-		addReq.open("POST", apiUrl);
-
-		addReq.onload = function() {
-
-			var json = this.responseText;
-			var response = JSON.parse(json);
-
-			if(response.result > 0) {
+		client.create({
+			className : 'points',
+			object : {
+				"title" : pinTitleFld.value,
+				"geoPoint" : {
+					"__type" : "GeoPoint",
+					"latitude" : mapLocation.latitude,
+					"longitude" : mapLocation.longitude
+				}
+			},
+			success : function(response) {
 
 				var t3 = Titanium.UI.create2DMatrix();
 				t3 = t3.scale(0);
@@ -111,17 +119,11 @@ addBtn.addEventListener('click', function() {
 				});
 				mapView.selectAnnotation(annotation);
 				annotation.title = pinTitleFld.value;
-			} else {
-				alert(L('add_error'));
+			},
+			error : function(response, xhr) {
+				alert(L('Error!'));
 			}
-
-		};
-		var prams = {
-			latitude : mapLocation.latitude,
-			longitude : mapLocation.longitude,
-			title : pinTitleFld.value,
-		};
-		addReq.send(prams);
+		});
 	});
 	addWin.add(addBtn);
 
@@ -189,7 +191,7 @@ aboutBtn.addEventListener('click', function() {
 	aboutWin.open(a);
 });
 //if(Ti.Platform.osname == 'iphone' || Ti.Platform.osname == 'ipad') {
-	mainWin.add(aboutBtn);
+mainWin.add(aboutBtn);
 //}
 
 var mapView = Titanium.Map.createView({
@@ -246,6 +248,27 @@ mapView.addEventListener('regionChanged', function(e) {
 	if(startRequestingOnServer === false) {
 		startRequestingOnServer = true;
 
+		/*client.get({
+		 className : 'points',
+		 payload : {
+		 'where' : JSON.stringify({
+		 'longitude' : {
+		 "$gte" : e.longitude - e.longitudeDelta,
+		 "$lte" : e.longitude + e.longitudeDelta
+		 },
+		 'latitude' : {
+		 "$gte" : e.latitude - e.latitudeDelta,
+		 "$lte" : e.longitude + e.latitudeDelta
+		 }
+		 })
+		 },
+		 success : function(response) {
+		 alert(JSON.stringify(response));
+		 },
+		 error : function(response, xhr) {
+		 alert(response);
+		 }
+		 });*/
 		mapReq.open("GET", apiUrl + "longitude=" + e.longitude + "&longitudeDelta=" + e.longitudeDelta + "&latitude=" + e.latitude + "&latitudeDelta=" + e.latitudeDelta);
 		mapReq.send();
 
